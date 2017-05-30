@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+     http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+     http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+     http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--Spring配置文件-->
+
+    <!--由于配置了<context:component-scan>，那么<context:annotation-config/>标签就不需要再配置，因为前者包含后者-->
+    <context:component-scan base-package="com.girl" annotation-config="true"/>
+
+    <!--配置AOP-->
+    <aop:aspectj-autoproxy/>
+
+    <!--引入外部文件-->
+    <import resource="applicationContext-datasource.xml"/>
+
+</beans>
