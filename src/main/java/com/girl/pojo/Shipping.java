@@ -2,30 +2,33 @@ package com.girl.pojo;
 
 import java.util.Date;
 
+/**
+ * 收货地址实体
+ */
 public class Shipping {
     private Integer id;
 
-    private Integer userId;
+    private Integer userId;// 用户id
 
-    private String receiverName;
+    private String receiverName;// 收货人姓名
 
-    private String receiverPhone;
+    private String receiverPhone;// 收货人固定电话
 
-    private String receiverMobile;
+    private String receiverMobile;// 收货人移动电话
 
-    private String receiverProvince;
+    private String receiverProvince;// 省份
 
-    private String receiverCity;
+    private String receiverCity;// 市
 
-    private String receiverDistrict;
+    private String receiverDistrict;// 县/区
 
-    private String receiverAddress;
+    private String receiverAddress;// 详细地址
 
-    private String receiverZip;
+    private String receiverZip;// 邮政编码
 
-    private Date createTime;
+    private Date createTime;// 创建时间
 
-    private Date updateTime;
+    private Date updateTime;//　最后一次修改时间
 
     public Shipping(Integer id, Integer userId, String receiverName, String receiverPhone, String receiverMobile, String receiverProvince, String receiverCity, String receiverDistrict, String receiverAddress, String receiverZip, Date createTime, Date updateTime) {
         this.id = id;

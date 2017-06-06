@@ -1,0 +1,1 @@
+Q1：在使用nginx反向代理ftp服务器时，不仅要在linux上配置hosts，还要在Windows上配置hosts？否则无法访问。

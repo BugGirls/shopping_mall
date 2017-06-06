@@ -3,30 +3,33 @@ package com.girl.pojo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * 商品实体
+ */
 public class Product {
-    private Integer id;
+    private Integer id;// 商品ID
 
-    private Integer categoryId;
+    private Integer categoryId;// 商品分类id，对应mall_category表的主键
 
-    private String name;
+    private String name;// 商品名称
 
-    private String subtitle;
+    private String subtitle;// 商品副标题
 
-    private String mainImage;
+    private String mainImage;// 产品主图，url相对地址
 
-    private String subImages;
+    private String subImages;// 图片地址，json格式，扩展用
 
-    private String detail;
+    private String detail;// 商品详情
 
-    private BigDecimal price;
+    private BigDecimal price;// 商品价格，单位：元，保留两位小数
 
-    private Integer stock;
+    private Integer stock;// 库存数量
 
-    private Integer status;
+    private Integer status;// 商品状态，1-在售 2-下架 3-删除
 
-    private Date createTime;
+    private Date createTime;// 创建时间
 
-    private Date updateTime;
+    private Date updateTime;// 最后一次修改时间
 
     public Product(Integer id, Integer categoryId, String name, String subtitle, String mainImage, String subImages, String detail, BigDecimal price, Integer stock, Integer status, Date createTime, Date updateTime) {
         this.id = id;

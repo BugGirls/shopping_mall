@@ -2,20 +2,23 @@ package com.girl.pojo;
 
 import java.util.Date;
 
+/**
+ * 购物车实体
+ */
 public class Cart {
     private Integer id;
 
-    private Integer userId;
+    private Integer userId;// 用户id
 
-    private Integer productId;
+    private Integer productId;// 商品id
 
-    private Integer quantity;
+    private Integer quantity;// 商品数量
 
-    private Integer checked;
+    private Integer checked;// 是否选择 1-已勾选 0-未勾选
 
-    private Date createTime;
+    private Date createTime;// 创建时间
 
-    private Date updateTime;
+    private Date updateTime;// 最后一次更新时间
 
     public Cart(Integer id, Integer userId, Integer productId, Integer quantity, Integer checked, Date createTime, Date updateTime) {
         this.id = id;
