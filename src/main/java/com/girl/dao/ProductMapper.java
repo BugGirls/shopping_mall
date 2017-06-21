@@ -27,4 +27,5 @@ public interface ProductMapper {
 
     // 通过关键字和
     List<Product> selectByKeywordAndCategoryIds(@Param(value = "keyword") String keyword, @Param(value = "categoryIdList") List<Integer> categoryIdList);
+
 }

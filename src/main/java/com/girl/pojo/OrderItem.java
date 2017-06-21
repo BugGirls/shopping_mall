@@ -3,28 +3,31 @@ package com.girl.pojo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * 订单明细实体
+ */
 public class OrderItem {
     private Integer id;
 
-    private Integer userId;
+    private Integer userId;// 用户id
 
-    private Long orderNo;
+    private Long orderNo;// 订单编号
 
-    private Integer productId;
+    private Integer productId;// 商品id
 
-    private String productName;
+    private String productName;// 商品名称
 
-    private String productImage;
+    private String productImage;// 商品图片地址
 
-    private BigDecimal currentUnitPrice;
+    private BigDecimal currentUnitPrice;// 生成订单时的商品单价，单位是元，保留两位小数
 
-    private Integer quantity;
+    private Integer quantity;// 商品数量
 
-    private BigDecimal totalPrice;
+    private BigDecimal totalPrice;// 商品总价，单位是元，保留两位小数
 
-    private Date createTime;
+    private Date createTime;// 创建时间
 
-    private Date updateTime;
+    private Date updateTime;// 最后一次修改时间
 
     public OrderItem(Integer id, Integer userId, Long orderNo, Integer productId, String productName, String productImage, BigDecimal currentUnitPrice, Integer quantity, BigDecimal totalPrice, Date createTime, Date updateTime) {
         this.id = id;

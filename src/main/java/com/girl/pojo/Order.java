@@ -3,34 +3,37 @@ package com.girl.pojo;
 import java.math.BigDecimal;
 import java.util.Date;
 
+/**
+ * 订单实体
+ */
 public class Order {
     private Integer id;
 
-    private Long orderNo;
+    private Long orderNo;// 订单编号
 
-    private Integer userId;
+    private Integer userId;// 用户ID
 
-    private Integer shippingId;
+    private Integer shippingId;// 收货地址ID
 
-    private BigDecimal payment;
+    private BigDecimal payment;// 实际付款金额(订单总价)，单位是元，保留两位小数
 
-    private Integer paymentType;
+    private Integer paymentType;// 支付类型，1-在线支付
 
-    private Integer postage;
+    private Integer postage;// 运费，单位是元
 
-    private Integer status;
+    private Integer status;// 订单状态，0-已取消 10-未付款 20-已付款 40-已发货 50-交易成功 60-交易关闭
 
-    private Date paymentTime;
+    private Date paymentTime;// 支付时间
 
-    private Date sendTime;
+    private Date sendTime;// 发货时间
 
-    private Date endTime;
+    private Date endTime;// 交易完成时间
 
-    private Date closeTime;
+    private Date closeTime;// 交易关闭时间
 
-    private Date createTime;
+    private Date createTime;// 创建时间
 
-    private Date updateTime;
+    private Date updateTime;// 最后一次修改时间
 
     public Order(Integer id, Long orderNo, Integer userId, Integer shippingId, BigDecimal payment, Integer paymentType, Integer postage, Integer status, Date paymentTime, Date sendTime, Date endTime, Date closeTime, Date createTime, Date updateTime) {
         this.id = id;
